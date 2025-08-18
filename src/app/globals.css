@@ -1,0 +1,144 @@
+@import "tailwindcss";
+
+:root {
+  --background: #070a16;
+  --foreground: #070a16;
+  --text-yellow: #f9cf1e;
+  --theme-purple: #873aea;
+  --theme-cyan: #0dbae2;
+  --theme-dark: #181c2b;
+  --theme-darker: #23263a;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-inter);
+  --font-mono: 'Courier New', monospace;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #070a16;
+    --foreground: #434f72;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+  color: #5e6a8d;
+  scroll-behavior: smooth;
+}
+
+
+/* Custom Scrollbar Styling */
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--theme-darker);
+  border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(135deg, var(--theme-purple), var(--theme-cyan));
+  border-radius: 6px;
+  border: 2px solid var(--theme-darker);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(135deg, #9b4df0, #1dd1f5);
+}
+
+/* Firefox Scrollbar */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: var(--theme-purple) var(--theme-darker);
+}
+
+/* Selection color */
+::selection {
+  background: var(--theme-purple);
+  color: white;
+}
+
+::-moz-selection {
+  background: var(--theme-purple);
+  color: white;
+}
+
+
+.yellow-text {
+  color: var(--text-yellow);
+}
+
+.section-wrapper {
+  max-width: 1500px;
+  margin: 0px auto;
+  color: white;
+  padding: 2rem 1.5rem;
+  display: flex;
+
+}
+
+@media (max-width: 768px) {
+  .section-wrapper {
+    flex-direction: column;
+    gap: 1.25rem;
+  }
+}
+
+/* Marquee Animation */
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-marquee {
+  animation: marquee 10s linear infinite;
+}
+
+.animate-marquee:hover {
+  animation-play-state: paused;
+}
+
+/* ///////////////////////////
+animated text
+//////////////////////////////*/
+
+.animated-text-gradient {
+  background: linear-gradient(
+    137.48deg,
+    #ffdb3b 10%,
+    #fe53bb 45%,
+    #8f51ea 67%,
+    #0044ff 87%
+  );
+  background-size: 300% 300%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  animation: textGradientMove 5s ease infinite;
+}
+
+@keyframes textGradientMove {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}

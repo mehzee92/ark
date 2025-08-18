@@ -1,0 +1,105 @@
+"use client";
+import { useState } from "react";
+import Button from "../uis/button";
+import Image from "next/image";
+import Link from "next/link";
+
+
+const Header = () => {
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+
+  return (
+    <header className="sticky top-0 z-50 bg-dark-blue/90 bg-black md:bg-transparent md:backdrop-blur shadow-sm shadow-gray-800 transition-all">
+      <div className=" mx-auto flex justify-between items-center py-3 px-4 md:px-8">
+        {/* Logo */}
+        <Link href={"/"} className="flex items-center">
+          <div className="w-10 h-10 bg-gradient-to-r from-purple-600 to-blue-500 rounded-full flex justify-center items-center shadow-lg">
+            <Image src={"/images/logo.png"} alt="logo" width={50} height={50} />
+          </div>
+          <h1 className={`text-2xl ml-2 text-gray-200 font-bold w-fit`}>Astro<span className='yellow-text'>Duck</span></h1>
+        </Link>
+
+        {/* Desktop Navigation */}
+        <nav className="hidden flex-1 md:flex justify-center gap-1 text-gray-200 items-center text-lg font-light p-2">
+        <div className="hover:bg-[#1c243e] px-3 py-2 rounded-xl transition">
+            <Link
+              href="/"
+              className="text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 to-pink-500 font-extralight text-xl px-3 py-2 rounded-xl transition hover:bg-[#1c243e]"
+            >
+              Buy ADUCK
+            </Link>
+          </div>
+         
+          <Link href="#story" className="hover:text-[#abc4ff] hover:bg-[#1c243e] px-3 py-2 rounded-xl transition">The Story</Link>
+                  <Link href="#astro_loan" className="hover:text-[#abc4ff] hover:bg-[#1c243e] px-3 py-2 rounded-xl transition">Astro<span className="yellow-text">Loan</span></Link>
+          <Link href="#tokenomics" className="hover:text-[#abc4ff] hover:bg-[#1c243e] px-3 py-2 rounded-xl transition">Tokenomics</Link>
+          <Link href="#vesting" className="hover:text-[#abc4ff] hover:bg-[#1c243e] px-3 py-2 rounded-xl transition">Vesting</Link>
+          <Link href="#roadmap" className="hover:text-[#abc4ff] hover:bg-[#1c243e] px-3 py-2 rounded-xl transition">Roadmap</Link>
+          
+
+        </nav>
+
+        
+
+        {/* Mobile Menu Toggle */}
+        <div className="md:hidden flex items-center">
+          <button
+            onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+            className="text-white focus:outline-none p-2 rounded hover:bg-blue-600/30 transition"
+            aria-label="Toggle menu"
+          >
+            <svg
+              className="w-7 h-7"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="2"
+                d="M4 6h16M4 12h16M4 18h16"
+              />
+            </svg>
+          </button>
+        </div>
+      </div>
+
+      {/* Mobile Menu Backdrop */}
+      <div
+        className={`fixed inset-0 z-40 md:hidden ${isMobileMenuOpen ? "opacity-100 pointer-events-auto" : "opacity-0 pointer-events-none"
+          }`}
+        onClick={() => setIsMobileMenuOpen(false)}
+      />
+
+      {/* Mobile Navigation Drawer */}
+      
+      <div
+        className={`fixed h-screen top-[67px] left-0 z-50 w-[70vw] max-w-xs bg-[#0f172a] text-white shadow-lg flex flex-col py-8 px-6 space-y-6 transform transition-transform duration-300 md:hidden ${isMobileMenuOpen ? "translate-x-0" : "-translate-x-full"
+          }`}
+        style={{ minWidth: "220px" }}
+      >
+        
+        <button
+          onClick={() => setIsMobileMenuOpen(false)}
+          className="absolute top-4 right-4 text-white text-2xl focus:outline-none"
+          aria-label="Close menu"
+        >
+          &times;
+        </button>
+
+        <Link href="#" className="text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 to-pink-500 text-lg font-semibold   " onClick={() => setIsMobileMenuOpen(false)}>Buy ADUCK</Link>
+        <Link href="#story" className="text-lg font-semibold hover:text-blue-400 transition" onClick={() => setIsMobileMenuOpen(false)}>The Story</Link>
+        <Link href="#astro_loan" className="text-lg font-semibold hover:text-blue-400 transition" onClick={() => setIsMobileMenuOpen(false)}>Astro<span className="yellow-text">Loan</span></Link>
+        <Link href="#tokenomics" className="text-lg font-semibold hover:text-blue-400 transition" onClick={() => setIsMobileMenuOpen(false)}>Tokenomics</Link>
+        <Link href="#vesting" className="text-lg font-semibold hover:text-blue-400 transition" onClick={() => setIsMobileMenuOpen(false)}>Vesting</Link>
+        <Link href="#roadmap" className="text-lg font-semibold hover:text-blue-400 transition" onClick={() => setIsMobileMenuOpen(false)}>Roadmap</Link>
+        
+
+      </div>
+    </header>
+  );
+};
+
+export default Header;
