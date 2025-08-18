@@ -23,7 +23,7 @@ const ArkCarbonProjects = () => {
   ];
 
   return (
-    <div className="container mx-auto p-2 lg:p-4 max-w-5xl">
+    <div id="submit_project" className="container mx-auto p-2 lg:p-4 max-w-5xl">
 
         <h1 className="text-3xl md:text-5xl font-extrabold mb-8 text-white text-center">
           Submit Your Project
