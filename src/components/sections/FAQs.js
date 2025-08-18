@@ -32,7 +32,7 @@ export default function App() {
       {/* Container for the entire FAQ section */}
       <div className="w-full max-w-4xl mx-auto py-12 p-2 lg:p-4">
         {/* Main heading */}
-        <h1 className="text-4xl md:text-5xl font-extrabold text-center mb-10 text-gray-50 leading-tight tracking-wide">
+        <h1 className="text-3xl md:text-5xl font-extrabold text-center mb-10 text-gray-50 leading-tight tracking-wide">
           Frequently Asked Questions
         </h1>
 

@@ -23,7 +23,7 @@ const Header = () => {
         <nav className="hidden flex-1 md:flex justify-center gap-1 text-gray-200 items-center text-lg font-light p-2">
          
           <Link href="#arkcoin" className="hover:text-[#abc4ff] hover:bg-[#1c243e] px-3 py-2 rounded-xl transition">ARK<span className="yellow-text">Coin</span></Link>
-          <Link href="#dashboard" className="hover:text-[#abc4ff] hover:bg-[#1c243e] px-3 py-2 rounded-xl transition">Buy</Link>
+          <Link href="#dashboard" className="hover:text-[#abc4ff] hover:bg-[#1c243e] px-3 py-2 rounded-xl transition">Buy ACARBON</Link>
           <Link href="#about" className="hover:text-[#abc4ff] hover:bg-[#1c243e] px-3 py-2 rounded-xl transition">About</Link>
           <Link href="#submit_project" className="hover:text-[#abc4ff] hover:bg-[#1c243e] px-3 py-2 rounded-xl transition">Submit Project</Link>
           <Link href="#faqs" className="hover:text-[#abc4ff] hover:bg-[#1c243e] px-3 py-2 rounded-xl transition">FAQs</Link>
@@ -83,7 +83,7 @@ const Header = () => {
 
         
         <Link href="#arkcoin" className="text-lg font-semibold hover:text-blue-400 transition" onClick={() => setIsMobileMenuOpen(false)}>ARK<span className="yellow-text">Coin</span></Link>
-        <Link href="#dashboard" className="text-lg font-semibold hover:text-blue-400 transition" onClick={() => setIsMobileMenuOpen(false)}>BUY</Link>
+        <Link href="#dashboard" className="text-lg font-semibold hover:text-blue-400 transition" onClick={() => setIsMobileMenuOpen(false)}>BUY ACARBON</Link>
         <Link href="#about" className="text-lg font-semibold hover:text-blue-400 transition" onClick={() => setIsMobileMenuOpen(false)}>About</Link>
         <Link href="#submit_project" className="text-lg font-semibold hover:text-blue-400 transition" onClick={() => setIsMobileMenuOpen(false)}>Submit Project</Link>
         <Link href="#faqs" className="text-lg font-semibold hover:text-blue-400 transition" onClick={() => setIsMobileMenuOpen(false)}>FAQs</Link>
