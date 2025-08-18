@@ -1,11 +1,11 @@
 "use client";
 
-import Button from "../uis/Button";
+import Button from "./../uis/Button";
 import StoryCarousel from "../uis/StoryCarousel";
-import H1 from "../uis/H1";
-import P from "../uis/P";
+import H1 from "./../uis/H1";
+import P from "./../uis/P";
 import SectionHeading from "../uis/SectionHeading";
-import Section from "../uis/Section";
+import Section from "./../uis/Section";
 
 
 export default function StorySection() {

@@ -1,8 +1,8 @@
 "use client";
 import SectionHeading from "../uis/SectionHeading";
-import H1 from "../uis/H1";
-import Button from "../uis/Button";
-import Section from "../uis/Section";
+import H1 from "./../uis/H1";
+import Button from "./../uis/Button";
+import Section from "./../uis/Section";
 import { GiDrop } from "react-icons/gi";
 
 export default function ARKCARBONPresale() {
