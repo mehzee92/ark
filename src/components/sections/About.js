@@ -18,7 +18,7 @@ const About = () => {
               Your Digital Key to a Greener Planet
             </h2>
             <p className="text-lg text-gray-300">
-              ARKCoin is a digital token that serves as the core currency within the ARKCARBON ecosystem. It's designed to make climate action accessible and rewarding for everyone. By owning and using ARKCoin, you're directly participating in a verifiable system of environmental restoration and carbon reduction.
+              ARKCoin is a digital token that serves as the core currency within the ARKCARBON ecosystem. It&#39;s designed to make climate action accessible and rewarding for everyone. By owning and using ARKCoin, you&#39;re directly participating in a verifiable system of environmental restoration and carbon reduction.
             </p>
           </div>
 
@@ -69,7 +69,7 @@ const About = () => {
                 <ul className="list-disc list-inside text-gray-400 space-y-2">
                   <li>A certified, verifiable unit representing the removal of one metric ton of CO₂.</li>
                   <li>The underlying asset that gives ARKCoin its value.</li>
-                  <li>Used to officially "offset" carbon emissions.</li>
+                  <li>Used to officially &quot;offset&quot; carbon emissions.</li>
                 </ul>
               </div>
             </div>
