@@ -7,7 +7,6 @@ import { SiTether } from "react-icons/si";
 import { SiSolana } from "react-icons/si";
 import Image from "next/image";
 import CountdownTimer from "./CountdownTimer";
-import H4 from "./H4";
 
 const TOKENS = [
   {
