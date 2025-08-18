@@ -28,7 +28,7 @@ export default function App() {
   ];
 
   return (
-    <div className="flex flex-col items-center min-h-screen bg-gray-950 text-gray-100 p-8 font-sans antialiased">
+    <div id='faqs' className="flex flex-col items-center min-h-screen bg-gray-950 text-gray-100 p-8 font-sans antialiased">
       {/* Container for the entire FAQ section */}
       <div className="w-full max-w-4xl mx-auto py-12 px-4 md:px-6 lg:px-8">
         {/* Main heading */}

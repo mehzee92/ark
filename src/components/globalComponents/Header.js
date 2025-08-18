@@ -30,10 +30,10 @@ const Header = () => {
             </Link>
           </div>
          
-          <Link href="#ARK_loan" className="hover:text-[#abc4ff] hover:bg-[#1c243e] px-3 py-2 rounded-xl transition">ARK<span className="yellow-text">Coin</span></Link>
-          <Link href="#tokenomics" className="hover:text-[#abc4ff] hover:bg-[#1c243e] px-3 py-2 rounded-xl transition">Carbon Credits</Link>
-          <Link href="#vesting" className="hover:text-[#abc4ff] hover:bg-[#1c243e] px-3 py-2 rounded-xl transition">About</Link>
-          <Link href="#roadmap" className="hover:text-[#abc4ff] hover:bg-[#1c243e] px-3 py-2 rounded-xl transition">FAQs</Link>
+          <Link href="#arkcoin" className="hover:text-[#abc4ff] hover:bg-[#1c243e] px-3 py-2 rounded-xl transition">ARK<span className="yellow-text">Coin</span></Link>
+          <Link href="#dashboard" className="hover:text-[#abc4ff] hover:bg-[#1c243e] px-3 py-2 rounded-xl transition">Dashboard</Link>
+          <Link href="#about" className="hover:text-[#abc4ff] hover:bg-[#1c243e] px-3 py-2 rounded-xl transition">About</Link>
+          <Link href="#faqs" className="hover:text-[#abc4ff] hover:bg-[#1c243e] px-3 py-2 rounded-xl transition">FAQs</Link>
           
 
         </nav>
