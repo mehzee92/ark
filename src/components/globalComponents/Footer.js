@@ -27,10 +27,10 @@ const Footer = () => {
   };
   const footerLinks = {
     product: [
-      { name: "AstroLoan", href: "#" },
+      { name: "ARKLoan", href: "#" },
       { name: "Staking", href: "#" },
       { name: "Governance", href: "#" },
-      { name: "AstroVerse", href: "#" },
+      { name: "ARKVerse", href: "#" },
     ],
     company: [
       { name: "About", href: "#story" },
@@ -45,17 +45,17 @@ const Footer = () => {
       { name: "FAQ", href: "#" },
     ],
     community: [
-      { name: "Instagram", href: "https://www.instagram.com/astroducksol/" },
-      { name: "Telegram", href: "https://t.me/astroducksol" },
-      { name: "Twitter", href: "https://x.com/astroducksol" },
+      { name: "Instagram", href: "https://www.instagram.com/ARKCARBONsol/" },
+      { name: "Telegram", href: "https://t.me/ARKCARBONsol" },
+      { name: "Twitter", href: "https://x.com/ARKCARBONsol" },
       { name: "Medium", href: "#" },
     ],
   };
 
   const socialLinks = [
-    { name: "Twitter", icon: <FaTwitter />, href: "https://x.com/astroducksol" },
-    { name: "Telegram", icon: <FaTelegramPlane />, href: "https://t.me/astroducksol" },
-    { name: "Instagram", icon: <FaInstagram />, href: "https://www.instagram.com/astroducksol/" },
+    { name: "Twitter", icon: <FaTwitter />, href: "https://x.com/ARKCARBONsol" },
+    { name: "Telegram", icon: <FaTelegramPlane />, href: "https://t.me/ARKCARBONsol" },
+    { name: "Instagram", icon: <FaInstagram />, href: "https://www.instagram.com/ARKCARBONsol/" },
     // { name: "Medium", icon: <FaMediumM />, href: "#" },
     // { name: "GitHub", icon: <FaGithub />, href: "#" },
   ];
@@ -78,7 +78,7 @@ const Footer = () => {
               </div>
               <div>
                 <h3 className="text-xl font-bold text-white">
-                  Astro<span className="yellow-text">Duck</span>
+                  ARK<span className="yellow-text">CARBON</span>
                 </h3>
                 <p className="text-[#0dbae2] text-sm font-medium">
                   To the Moon & Beyond
@@ -88,7 +88,7 @@ const Footer = () => {
             <P
               variant="typeTwo"
               text={
-                "The next generation meme token on Solana with real utility. Join the AstroDuck community and be part of the future of decentralized finance."
+                "The next generation meme token on Solana with real utility. Join the ARKCARBON community and be part of the future of decentralized finance."
               }
             />
 
@@ -168,7 +168,7 @@ const Footer = () => {
             <div>
               <h4 className="text-white font-semibold mb-2">Stay Updated</h4>
               <p className="text-gray-400 text-sm">
-                Get the latest updates on AstroDuck development and community
+                Get the latest updates on ARKCARBON development and community
                 news.
               </p>
             </div>
@@ -186,7 +186,7 @@ const Footer = () => {
                 className="flex-1 md:w-64 px-4 py-3 bg-[#23263a] border border-[#353a50] rounded-lg text-white placeholder-gray-400 focus:outline-none focus:border-[#0dbae2] transition-colors duration-300"
               />
               <a
-                href="mailto:aduck@astroduck.xyz"
+                href="mailto:aCARBON@ARKCARBON.xyz"
                 className="px-2 py-3 bg-gradient-to-r from-[#0dbae2] to-[#873aea] text-white font-semibold rounded-lg hover:shadow-lg hover:shadow-[#0dbae2]/25 transition-all duration-300"
               >
                 Subscribe
@@ -200,7 +200,7 @@ const Footer = () => {
           <div className="flex flex-col md:flex-row items-center justify-between gap-4">
             <P
               variant="typeTwo"
-              text={<>© {currentYear} AstroDuck. All rights reserved.</>}
+              text={<>© {currentYear} ARKCARBON. All rights reserved.</>}
             />
 
             <div className="flex items-center gap-6 text-sm">

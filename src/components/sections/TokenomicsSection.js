@@ -66,18 +66,18 @@ const options = {
 const tokenomics = [
   { label: "Total Supply", value: "1,234,567,890" },
   { label: "Decimals", value: "9" },
-  { label: "Symbol", value: "ADUCK" },
-  { label: "Token Name", value: "AstroDuck" },
+  { label: "Symbol", value: "ACARBON" },
+  { label: "Token Name", value: "ARKCARBON" },
   { label: "Chain", value: "Solana" },
   { label: "Presale Price", value: "$0.01" },
   { label: "Target Listing Price", value: "$1" }
 ];
 
 const distribution = [
-  { label: "Presale", value: "30%", notes: "Public sale at $0.01 per ADUCK" },
+  { label: "Presale", value: "30%", notes: "Public sale at $0.01 per ACARBON" },
   { label: "Team & Advisors", value: "15%", notes: "12-month cliff + 12-month linear vesting" },
   { label: "Liquidity", value: "15%", notes: "Locked for DEX & CEX listings" },
-  { label: "Loans Pool", value: "14%", notes: "For AstroLoan lending feature" },
+  { label: "Loans Pool", value: "14%", notes: "For ARKLoan lending feature" },
   { label: "Master Sale", value: "15%", notes: "Reserved for future fundraising/partners" },
   { label: "Marketing / Ecosystem", value: "5%", notes: "Growth, CEX fees, campaigns" },
   { label: "Airdrop & Giveaways", value: "3%", notes: "Community rewards & campaigns" },
@@ -137,7 +137,7 @@ const TokenomicsSection = () => {
                 <Doughnut data={data} options={options} />
                 {/* Center label inside doughnut */}
                 <div className="absolute inset-0 flex flex-col items-center justify-center pointer-events-none">
-                  <H1 text={<>Astro<span className="yellow-text">Duck</span></>}/>
+                  <H1 text={<>ARK<span className="yellow-text">CARBON</span></>}/>
                   <H4 text={"Tokenomics"}/>
                 </div>
               </div>

@@ -30,23 +30,23 @@ const roadmap = [
   },
   { 
     phase: "Phase 4", 
-    quarter: "AstroLoan Activation (Q2 2026)", 
+    quarter: "ARKLoan Activation (Q2 2026)", 
     title: "Lending Platform", 
-    desc: "Deploy lending module. Enable borrowing USDC/SOL against ADUCK.",
+    desc: "Deploy lending module. Enable borrowing USDC/SOL against ACARBON.",
     progress: 11
   },
   { 
     phase: "Phase 5", 
     quarter: "Utility & Ecosystem Growth (Q4 2026)", 
     title: "Ecosystem Expansion", 
-    desc: "Airdrops & staking rewards. AstroLoan upgrades and DAO treasury launch.",
+    desc: "Airdrops & staking rewards. ARKLoan upgrades and DAO treasury launch.",
     progress: 8
   },
   { 
     phase: "Phase 6", 
-    quarter: "AstroVerse & DAO Tools (Q1 2027)", 
+    quarter: "ARKVerse & DAO Tools (Q1 2027)", 
     title: "Gaming & Governance", 
-    desc: "AstroVerse Game release. DAO governance tools and voting.",
+    desc: "ARKVerse Game release. DAO governance tools and voting.",
     progress: 6
   },
   { 

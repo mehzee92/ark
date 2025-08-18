@@ -2,7 +2,7 @@
 
 import { useState, useRef, useEffect } from "react";
 import { FaChevronDown } from "react-icons/fa6";
-import Button from "./button";
+import Button from "./Button";
 import { SiTether } from "react-icons/si";
 import { SiSolana } from "react-icons/si";
 import Image from "next/image";
@@ -131,7 +131,7 @@ export default function PresaleWidget() {
 
                 >
                   <Image src={"/images/logo1.png"} width={25} height={25} alt="icon" />
-                  ADUCK
+                  ACARBON
 
                 </button>
 

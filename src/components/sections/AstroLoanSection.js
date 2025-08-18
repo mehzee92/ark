@@ -3,9 +3,9 @@ import Image from "next/image";
 import Section from "../uis/Section";
 import H4 from "../uis/H4";
 import P from "../uis/P";
-import Button from "../uis/button";
+import Button from "../uis/Button";
 
-export default function AstroLoanSection() {
+export default function ARKLoanSection() {
     const loanFeatures = [
         {
             title: "Flexible LTV",
@@ -26,18 +26,18 @@ export default function AstroLoanSection() {
 
     return (
         <Section
-            heading="AstroLoan: Borrow Against Your Bags"
+            heading="ARKLoan: Borrow Against Your Bags"
             className=" relative"
         >
-            <div id="astro_loan" className=" absolute -top-[100px]" />
+            <div id="ARK_loan" className=" absolute -top-[100px]" />
             <div className="w-full flex flex-col lg:flex-row items-center justify-center gap-12">
                 {/* Left Side Image */}
                 <div className="w-full lg:w-1/2 flex justify-center mb-8 md:mb-0">
                     <Image
                         width={500}
                         height={500}
-                        src="/images/astroLoanImg.png"
-                        alt="AstroLoan Illustration"
+                        src="/images/ARKLoanImg.png"
+                        alt="ARKLoan Illustration"
                         className="w-[70%] h-auto object-contain"
                     />
                 </div>
@@ -45,13 +45,13 @@ export default function AstroLoanSection() {
                 {/* Right Side Content */}
                 <div className="w-full lg:w-1/2 flex flex-col justify-center">
                     <div>
-                        <H4 text="AstroLoan is AstroDuck&apos;s upcoming decentralized lending feature, designed to let you unlock liquidity without selling your assets." />
-                        <P text={<> Use your <span className="font-semibold text-white">ADUCK tokens</span> or supported meme coins as collateral to instantly borrow{" "}
+                        <H4 text="ARKLoan is ARKCARBON&apos;s upcoming decentralized lending feature, designed to let you unlock liquidity without selling your assets." />
+                        <P text={<> Use your <span className="font-semibold text-white">ACARBON tokens</span> or supported meme coins as collateral to instantly borrow{" "}
                             <span className="font-semibold text-white">USDC</span> or{" "}
                             <span className="font-semibold text-white">SOL</span> — no credit checks, no middlemen, just smart on-chain automation.</>} />
 
 
-                        <P text={<> Whether you&apos;re hedging, reinvesting, or need fast funds, AstroLoan puts powerful DeFi tools at your fingertips while letting you keep your moon bags.</>} />
+                        <P text={<> Whether you&apos;re hedging, reinvesting, or need fast funds, ARKLoan puts powerful DeFi tools at your fingertips while letting you keep your moon bags.</>} />
 
                         <P text={<><strong>No selling. No stress. Just smart liquidity.</strong></>} />
 

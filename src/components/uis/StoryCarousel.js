@@ -9,7 +9,7 @@ const storyFeatures = [
   {
     icon: <FaRocket className="text-4xl text-cyan-400" />,
     title: "Meme-Powered Rocket",
-    description: "Built from laughter and pure determination, AstroDuck's rocket ship is fueled by the power of memes and community spirit.",
+    description: "Built from laughter and pure determination, ARKCARBON's rocket ship is fueled by the power of memes and community spirit.",
   },
   {
     icon: <FaStar className="text-4xl text-yellow-400" />,

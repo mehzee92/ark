@@ -1,6 +1,6 @@
 "use client";
 import { useState } from "react";
-import Button from "../uis/button";
+import Button from "../uis/Button";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -16,7 +16,8 @@ const Header = () => {
           <div className="w-10 h-10 bg-gradient-to-r from-purple-600 to-blue-500 rounded-full flex justify-center items-center shadow-lg">
             <Image src={"/images/logo.png"} alt="logo" width={50} height={50} />
           </div>
-          <h1 className={`text-2xl ml-2 text-gray-200 font-bold w-fit`}>Astro<span className='yellow-text'>Duck</span></h1>
+          
+          <h1 className={`text-2xl ml-2 text-gray-200 font-bold w-fit`}>ARK<span className='yellow-text'>CARBON</span></h1>
         </Link>
 
         {/* Desktop Navigation */}
@@ -24,17 +25,16 @@ const Header = () => {
         <div className="hover:bg-[#1c243e] px-3 py-2 rounded-xl transition">
             <Link
               href="/"
-              className="text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 to-pink-500 font-extralight text-xl px-3 py-2 rounded-xl transition hover:bg-[#1c243e]"
+              className="text-transparent bg-clip-text bg-gradient-to-r from-gray-50 to-green-600 font-extralight text-xl px-3 py-2 rounded-xl transition hover:bg-[#1c243e]"
             >
-              Buy ADUCK
+              Buy ARKCOIN
             </Link>
           </div>
          
-          <Link href="#story" className="hover:text-[#abc4ff] hover:bg-[#1c243e] px-3 py-2 rounded-xl transition">The Story</Link>
-                  <Link href="#astro_loan" className="hover:text-[#abc4ff] hover:bg-[#1c243e] px-3 py-2 rounded-xl transition">Astro<span className="yellow-text">Loan</span></Link>
-          <Link href="#tokenomics" className="hover:text-[#abc4ff] hover:bg-[#1c243e] px-3 py-2 rounded-xl transition">Tokenomics</Link>
-          <Link href="#vesting" className="hover:text-[#abc4ff] hover:bg-[#1c243e] px-3 py-2 rounded-xl transition">Vesting</Link>
-          <Link href="#roadmap" className="hover:text-[#abc4ff] hover:bg-[#1c243e] px-3 py-2 rounded-xl transition">Roadmap</Link>
+          <Link href="#ARK_loan" className="hover:text-[#abc4ff] hover:bg-[#1c243e] px-3 py-2 rounded-xl transition">ARK<span className="yellow-text">Coin</span></Link>
+          <Link href="#tokenomics" className="hover:text-[#abc4ff] hover:bg-[#1c243e] px-3 py-2 rounded-xl transition">Carbon Credits</Link>
+          <Link href="#vesting" className="hover:text-[#abc4ff] hover:bg-[#1c243e] px-3 py-2 rounded-xl transition">About</Link>
+          <Link href="#roadmap" className="hover:text-[#abc4ff] hover:bg-[#1c243e] px-3 py-2 rounded-xl transition">FAQs</Link>
           
 
         </nav>
@@ -89,9 +89,9 @@ const Header = () => {
           &times;
         </button>
 
-        <Link href="#" className="text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 to-pink-500 text-lg font-semibold   " onClick={() => setIsMobileMenuOpen(false)}>Buy ADUCK</Link>
+        <Link href="#" className="text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 to-pink-500 text-lg font-semibold   " onClick={() => setIsMobileMenuOpen(false)}>Buy ACARBON</Link>
         <Link href="#story" className="text-lg font-semibold hover:text-blue-400 transition" onClick={() => setIsMobileMenuOpen(false)}>The Story</Link>
-        <Link href="#astro_loan" className="text-lg font-semibold hover:text-blue-400 transition" onClick={() => setIsMobileMenuOpen(false)}>Astro<span className="yellow-text">Loan</span></Link>
+        <Link href="#ARK_loan" className="text-lg font-semibold hover:text-blue-400 transition" onClick={() => setIsMobileMenuOpen(false)}>ARK<span className="yellow-text">Loan</span></Link>
         <Link href="#tokenomics" className="text-lg font-semibold hover:text-blue-400 transition" onClick={() => setIsMobileMenuOpen(false)}>Tokenomics</Link>
         <Link href="#vesting" className="text-lg font-semibold hover:text-blue-400 transition" onClick={() => setIsMobileMenuOpen(false)}>Vesting</Link>
         <Link href="#roadmap" className="text-lg font-semibold hover:text-blue-400 transition" onClick={() => setIsMobileMenuOpen(false)}>Roadmap</Link>

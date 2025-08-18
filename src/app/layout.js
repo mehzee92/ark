@@ -16,18 +16,30 @@ export default function RootLayout({ children }) {
         <meta name="msapplication-TileColor" content="#873aea" />
         <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
         <meta name="apple-mobile-web-app-capable" content="yes" />
-        <meta name="apple-mobile-web-app-title" content="AstroDuck" />
+        <meta name="apple-mobile-web-app-title" content="ARKCARBON" />
         <meta name="color-scheme" content="dark" />
         <meta name="accent-color" content="#873aea" />
-        <link rel="apple-touch-icon" href="/images/astroduck.png" />
-        <link rel="icon" type="image/png" sizes="32x32" href="/images/astroduck.png" />
-        <link rel="icon" type="image/png" sizes="16x16" href="/images/astroduck.png" />
+        <link rel="apple-touch-icon" href="/images/logo-mini.png" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/images/logo-mini.png" />
+        <link rel="icon" type="image/png" sizes="16x16" href="/images/logo-mini.png" />
         <link rel="manifest" href="/manifest.json" />
+        
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Libertinus+Sans:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet"></link>        
+                
         <style>{`
           :root {
             --theme-purple: #873aea;
             --theme-cyan: #0dbae2;
           }
+
+          body {
+            font-family: "Libertinus Sans", sans-serif;
+            font-weight: 400;
+            font-style: normal;          
+          }
+          
           html {
             scrollbar-color: var(--theme-purple) #23263a;
           }
