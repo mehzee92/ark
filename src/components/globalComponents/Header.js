@@ -21,17 +21,9 @@ const Header = () => {
 
         {/* Desktop Navigation */}
         <nav className="hidden flex-1 md:flex justify-center gap-1 text-gray-200 items-center text-lg font-light p-2">
-        <div className="hover:bg-[#1c243e] px-3 py-2 rounded-xl transition">
-            <Link
-              href="/"
-              className="text-transparent bg-clip-text bg-gradient-to-r from-gray-50 to-green-600 font-extralight text-xl px-3 py-2 rounded-xl transition hover:bg-[#1c243e]"
-            >
-              Buy ARKCOIN
-            </Link>
-          </div>
          
           <Link href="#arkcoin" className="hover:text-[#abc4ff] hover:bg-[#1c243e] px-3 py-2 rounded-xl transition">ARK<span className="yellow-text">Coin</span></Link>
-          <Link href="#dashboard" className="hover:text-[#abc4ff] hover:bg-[#1c243e] px-3 py-2 rounded-xl transition">Dashboard</Link>
+          <Link href="#dashboard" className="hover:text-[#abc4ff] hover:bg-[#1c243e] px-3 py-2 rounded-xl transition">Buy</Link>
           <Link href="#about" className="hover:text-[#abc4ff] hover:bg-[#1c243e] px-3 py-2 rounded-xl transition">About</Link>
           <Link href="#faqs" className="hover:text-[#abc4ff] hover:bg-[#1c243e] px-3 py-2 rounded-xl transition">FAQs</Link>
           
@@ -88,9 +80,9 @@ const Header = () => {
           &times;
         </button>
 
-        <Link href="#buyarkcoin" className="text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 to-pink-500 text-lg font-semibold   " onClick={() => setIsMobileMenuOpen(false)}>Buy ACARBON</Link>
+        
         <Link href="#arkcoin" className="text-lg font-semibold hover:text-blue-400 transition" onClick={() => setIsMobileMenuOpen(false)}>ARK<span className="yellow-text">Coin</span></Link>
-        <Link href="#dashboard" className="text-lg font-semibold hover:text-blue-400 transition" onClick={() => setIsMobileMenuOpen(false)}>Dashboard</Link>
+        <Link href="#dashboard" className="text-lg font-semibold hover:text-blue-400 transition" onClick={() => setIsMobileMenuOpen(false)}>BUY</Link>
         <Link href="#about" className="text-lg font-semibold hover:text-blue-400 transition" onClick={() => setIsMobileMenuOpen(false)}>About</Link>
         <Link href="#faqs" className="text-lg font-semibold hover:text-blue-400 transition" onClick={() => setIsMobileMenuOpen(false)}>FAQs</Link>
         
