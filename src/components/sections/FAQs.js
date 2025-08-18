@@ -65,7 +65,7 @@ const FaqItem = ({ question, answer }) => {
           className="w-full flex justify-between items-center text-left focus:outline-none"
         >
           {/* Question text */}
-          <span className="text-lg md:text-xl font-semibold text-gray-50 leading-relaxed">
+          <span className="text-lg md:text-xl cursor-pointer font-semibold text-gray-50 leading-relaxed">
             {question}
           </span>
           {/* Chevron icon that rotates based on the state */}

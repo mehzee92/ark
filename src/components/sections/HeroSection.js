@@ -23,17 +23,21 @@ export default function ARKCARBONPresale() {
     >
       <div
         id="hero"
-        className="py-10 items-center md:flex-row md:justify-between gap-5 md:gap-16"
+        className="items-center md:flex-row md:justify-between gap-5 md:gap-16"
 
       >
         {/* Left Section */}
-        <div className="space-y-5 w-full ">
+        <div className="space-y-5  py-7 "  style={{
+          backgroundImage:"radial-gradient(#00000099, #00000099, transparent, transparent, transparent)"
+        }}>
           <SectionHeading text={<>
             <span className="text-white" style={{textShadow:"1px 1px black"}}>ARK</span>
             <span style={{textShadow:"1px 1px black"}}>CARBON</span>
             </>} variant={"heroSection"}/>
-
-          <H1 text={<>The Earth is Gods Masterpiece - given to be enjoyed, protected, preserved. With ARKCarbon, that mission becomes our everyday act of gratitude.</>} />
+          
+          <div style={{maxWidth:"690px", margin:"auto"}}>
+            <H1 text={<>The Earth is Gods Masterpiece - given to be enjoyed, protected, preserved. With ARKCarbon, that mission becomes our everyday act of gratitude.</>} />
+          </div>
 
         </div>
 

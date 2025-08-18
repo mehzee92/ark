@@ -56,8 +56,9 @@ const Footer = () => {
                 </p>
               </div>
             </div>
-            <p className="text-gray-400 text-sm leading-relaxed">
-              The next generation meme token on Solana with real utility. Join the ARKCARBON community and be part of the future of decentralized finance.
+            <p className="text-gray-400 text-sm leading-relaxed" style={{maxWidth:"550px"}}>
+              Our carbon credit–backed token empowers sustainable investing by turning 
+              verified carbon offsets into a secure and tradeable digital asset.
             </p>
           </div>
 

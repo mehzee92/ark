@@ -1,8 +1,7 @@
 "use client";
+import H1 from "./../uis/H1";
 
-import React, { useState } from 'react';
 
-// Main projects component.
 const ArkCarbonProjects = () => {
   // Sample data for the projects section
   const projectsData = [
@@ -26,10 +25,7 @@ const ArkCarbonProjects = () => {
   return (
     <div className="container mx-auto p-4 max-w-5xl">
       {/* Main title */}
-      <h1 className="text-4xl font-extrabold mb-8 text-white">
-        ARKCARBON
-      </h1>
-
+      <H1 text="Submit Your Project" />
       {/* Projects Page Section */}
       <div className="bg-gray-800 p-6 rounded-2xl shadow-lg">
         <h2 className="text-xl font-bold text-green-500 mb-4">Green Projects</h2>

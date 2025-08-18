@@ -30,8 +30,8 @@ const ArkCarbonDashboard = () => {
   return (
     <div id='dashboard' className="container mx-auto p-4 max-w-5xl">
       {/* Main title */}
-      <h1 className="text-4xl font-extrabold mb-8 text-white">
-        ARKCARBON
+      <h1 className="text-4xl font-extrabold mb-8 text-center text-white">
+        Dashboard
       </h1>
 
       {/* Top section: ARKCOIN Wallet and Offset Carbon cards */}
