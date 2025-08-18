@@ -16,7 +16,7 @@ const Header = () => {
             <Image src={"/images/logo.png"} alt="logo" width={50} height={50} />
           </div>
           
-          <h1 className={`text-2xl ml-2 text-gray-200 font-bold w-fit`}>ARK<span className='yellow-text'>CARBON</span></h1>
+          <h1 className={`text-2xl ml-2 text-gray-200 font-bold w-fit`}>ARK<span className='text-green-400'>CARBON</span></h1>
         </Link>
 
         {/* Desktop Navigation */}
@@ -88,12 +88,11 @@ const Header = () => {
           &times;
         </button>
 
-        <Link href="#" className="text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 to-pink-500 text-lg font-semibold   " onClick={() => setIsMobileMenuOpen(false)}>Buy ACARBON</Link>
-        <Link href="#story" className="text-lg font-semibold hover:text-blue-400 transition" onClick={() => setIsMobileMenuOpen(false)}>The Story</Link>
-        <Link href="#ARK_loan" className="text-lg font-semibold hover:text-blue-400 transition" onClick={() => setIsMobileMenuOpen(false)}>ARK<span className="yellow-text">Loan</span></Link>
-        <Link href="#tokenomics" className="text-lg font-semibold hover:text-blue-400 transition" onClick={() => setIsMobileMenuOpen(false)}>Tokenomics</Link>
-        <Link href="#vesting" className="text-lg font-semibold hover:text-blue-400 transition" onClick={() => setIsMobileMenuOpen(false)}>Vesting</Link>
-        <Link href="#roadmap" className="text-lg font-semibold hover:text-blue-400 transition" onClick={() => setIsMobileMenuOpen(false)}>Roadmap</Link>
+        <Link href="#buyarkcoin" className="text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 to-pink-500 text-lg font-semibold   " onClick={() => setIsMobileMenuOpen(false)}>Buy ACARBON</Link>
+        <Link href="#arkcoin" className="text-lg font-semibold hover:text-blue-400 transition" onClick={() => setIsMobileMenuOpen(false)}>ARK<span className="yellow-text">Coin</span></Link>
+        <Link href="#dashboard" className="text-lg font-semibold hover:text-blue-400 transition" onClick={() => setIsMobileMenuOpen(false)}>Dashboard</Link>
+        <Link href="#about" className="text-lg font-semibold hover:text-blue-400 transition" onClick={() => setIsMobileMenuOpen(false)}>About</Link>
+        <Link href="#faqs" className="text-lg font-semibold hover:text-blue-400 transition" onClick={() => setIsMobileMenuOpen(false)}>FAQs</Link>
         
 
       </div>

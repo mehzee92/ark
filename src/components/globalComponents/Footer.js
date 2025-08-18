@@ -48,12 +48,9 @@ const Footer = () => {
                 <img src="/images/logo.png" />
               </div>
               <div>
-                <h3 className="text-xl font-bold text-white">
+                <h3 className="text-xl text-white">
                   ARK<span className="text-green-400">CARBON</span>
                 </h3>
-                <p className="text-green-300 text-sm font-medium">
-                  For Green Projects
-                </p>
               </div>
             </div>
             <p className="text-gray-400 text-sm leading-relaxed" style={{maxWidth:"550px"}}>

@@ -28,7 +28,7 @@ const ArkCarbonDashboard = () => {
   };
 
   return (
-    <div id='dashboard' className="container mx-auto p-4 max-w-5xl">
+    <div id='dashboard' className="container mx-auto p-2 lg:p-4 max-w-5xl">
       {/* Main title */}
       <h1 className="text-4xl font-extrabold mb-8 text-center text-white">
         Dashboard
@@ -46,7 +46,7 @@ const ArkCarbonDashboard = () => {
             $2.50 per ARKCOIN<br/>
             1.2 ARKCOIN Carbon Credit
           </p>
-          <button className="w-full bg-green-600 text-white font-bold py-3 px-4 rounded-xl shadow-md hover:bg-green-700 transition-colors">
+          <button className="w-full cursor-pointer bg-green-400 text-white font-bold py-3 px-4 rounded-xl shadow-md hover:bg-green-600 transition-colors">
             Buy ARKCOIN
           </button>
         </div>
@@ -69,12 +69,15 @@ const ArkCarbonDashboard = () => {
               Auto-offset
             </label>
           </div>
-          <button className="w-full bg-green-600 text-white font-bold py-3 px-4 rounded-xl shadow-md hover:bg-green-700 transition-colors mb-4">
-            Redeem ARKCOIN
-          </button>
+
           <p className="text-sm text-gray-400">
             Offset monthly via a subscription
           </p>
+
+          <button className="w-full cursor-pointer bg-green-400 text-white font-bold py-3 px-4 rounded-xl shadow-md hover:bg-green-600 transition-colors mb-4">
+            Redeem ARKCOIN
+          </button>
+
         </div>
       </div>
 

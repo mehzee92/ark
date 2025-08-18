@@ -28,9 +28,9 @@ export default function App() {
   ];
 
   return (
-    <div id='faqs' className="flex flex-col items-center min-h-screen bg-gray-950 text-gray-100 p-8 font-sans antialiased">
+    <div id='faqs' className="flex flex-col items-center min-h-screen bg-gray-950 text-gray-100 lg:p-8 font-sans antialiased">
       {/* Container for the entire FAQ section */}
-      <div className="w-full max-w-4xl mx-auto py-12 px-4 md:px-6 lg:px-8">
+      <div className="w-full max-w-4xl mx-auto py-12 p-2 lg:p-4">
         {/* Main heading */}
         <h1 className="text-4xl md:text-5xl font-extrabold text-center mb-10 text-gray-50 leading-tight tracking-wide">
           Frequently Asked Questions
@@ -62,10 +62,10 @@ const FaqItem = ({ question, answer }) => {
         {/* Button to toggle the answer visibility */}
         <button
           onClick={() => setIsOpen(!isOpen)}
-          className="w-full flex justify-between items-center text-left focus:outline-none"
+          className="w-full cursor-pointer flex justify-between items-center text-left focus:outline-none"
         >
           {/* Question text */}
-          <span className="text-lg md:text-xl cursor-pointer font-semibold text-gray-50 leading-relaxed">
+          <span className="text-lg md:text-xl  font-semibold text-gray-50 leading-relaxed">
             {question}
           </span>
           {/* Chevron icon that rotates based on the state */}

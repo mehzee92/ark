@@ -23,9 +23,12 @@ const ArkCarbonProjects = () => {
   ];
 
   return (
-    <div className="container mx-auto p-4 max-w-5xl">
-      {/* Main title */}
-      <H1 text="Submit Your Project" />
+    <div className="container mx-auto p-2 lg:p-4 max-w-5xl">
+
+        <h1 className="text-4xl md:text-5xl font-extrabold mb-8 text-white text-center">
+          Submit Your Project
+        </h1>
+
       {/* Projects Page Section */}
       <div className="bg-gray-800 p-6 rounded-2xl shadow-lg">
         <h2 className="text-xl font-bold text-green-500 mb-4">Green Projects</h2>
@@ -73,7 +76,7 @@ const ArkCarbonProjects = () => {
             </div>
             <button
               type="submit"
-              className="w-full bg-green-600 text-white font-bold py-3 px-4 rounded-xl shadow-md hover:bg-green-700 transition-colors"
+              className="w-full bg-green-400 text-white font-bold py-3 px-4 rounded-xl shadow-md hover:bg-green-600 transition-colors"
             >
               Submit Project
             </button>
