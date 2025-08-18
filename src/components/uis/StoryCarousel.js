@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useRef, useEffect } from "react";
+import { useState, useRef } from "react";
 import { FaRocket, FaStar, FaUsers, FaCoins } from "react-icons/fa";
 import H4 from "./H4";
 import P from "./P";

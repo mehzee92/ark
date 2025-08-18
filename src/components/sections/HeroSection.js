@@ -1,8 +1,4 @@
 "use client";
-
-import Image from "next/image";
-import P from "../uis/P";
-import PresaleWidget from "../uis/PresaleWidget";
 import SectionHeading from "../uis/SectionHeading";
 import H1 from "../uis/H1";
 import Button from "../uis/Button";

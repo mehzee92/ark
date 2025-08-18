@@ -6,7 +6,7 @@ const Button = ({ text, onClick, variant = 'info', type = 'button' }) => {
     outlined: ` mx-1 rounded-lg border-2 cursor-pointer border-cyan-300 text-cyan-300 bg-transparent px-6 py-2 focus:outline-none transition hover:bg-cyan-300 hover:text-gray-800`
   }
 
-  return (
+  return ( 
     <button
       type={type}
       onClick={onClick}
