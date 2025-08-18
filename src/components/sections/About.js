@@ -7,7 +7,7 @@ const About = () => {
   return (
     <div id='about' className="bg-black min-h-screen py-16 font-sans text-white  ">
       <div className="container mx-auto p-2 lg:p-4 max-w-4xl">
-        <h1 className="text-4xl md:text-5xl font-extrabold mb-8 text-white text-center">
+        <h1 className="text-3xl md:text-5xl font-extrabold mb-8 text-white text-center">
           What is ARKCoin?
         </h1>
         

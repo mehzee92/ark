@@ -30,10 +30,13 @@ export default function ARKCARBONPresale() {
         <div className="space-y-5  py-7 "  style={{
           backgroundImage:"radial-gradient(#00000099, #00000099, transparent, transparent, transparent)"
         }}>
-          <SectionHeading text={<>
+
+
+
+          <h1 className="text-3xl md:text-5xl font-extrabold text-center mb-10 text-gray-50 leading-tight tracking-wide">
             <span className="text-white" style={{textShadow:"1px 1px black"}}>ARK</span>
-            <span style={{textShadow:"1px 1px black"}}>CARBON</span>
-            </>} variant={"heroSection"}/>
+            <span className="text-green-400" style={{textShadow:"1px 1px black"}}>CARBON</span>
+          </h1>            
           
           <div style={{maxWidth:"690px", margin:"auto"}}>
             <H1 text={<>The Earth is Gods Masterpiece - given to be enjoyed, protected, preserved. With ARKCarbon, that mission becomes our everyday act of gratitude.</>} />
