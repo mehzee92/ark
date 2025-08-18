@@ -1,6 +1,6 @@
 "use client";
 
-import Button from "./../uis/Button";
+import Button from "../uis/button";
 import StoryCarousel from "../uis/StoryCarousel";
 import H1 from "./../uis/H1";
 import P from "./../uis/P";

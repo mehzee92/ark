@@ -3,7 +3,7 @@ import Image from "next/image";
 import Section from "../uis/Section";
 import H4 from "../uis/H4";
 import P from "../uis/P";
-import Button from "../uis/Button";
+import Button from "../uis/button";
 
 export default function ARKLoanSection() {
     const loanFeatures = [
