@@ -14,6 +14,7 @@ const App = () => {
 // Main dashboard component.
 const ArkCarbonDashboard = () => {
   const [isAutoOffset, setIsAutoOffset] = useState(false);
+  const [buyAmount, setBuyAmount] = useState(10); // State for the input amount
 
   // Sample data for the history section
   const historyData = [
@@ -27,64 +28,120 @@ const ArkCarbonDashboard = () => {
     setIsAutoOffset(!isAutoOffset);
   };
 
+  const handleBuyAmountChange = (e) => {
+    // Ensure the input is a number
+    const value = e.target.value.replace(/[^0-9]/g, '');
+    setBuyAmount(value);
+  };
+
   return (
     <div id='dashboard' className="container mx-auto p-2 lg:p-4 max-w-5xl">
       {/* Main title */}
-      <h1 className="text-4xl font-extrabold mb-8 text-center text-white">
+      <h1 className="text-3xl font-extrabold mb-8 text-center text-white">
         Dashboard
       </h1>
 
-      {/* Top section: ARKCOIN Wallet and Offset Carbon cards */}
+      {/* ARKCOIN Wallet Section */}
+      
       <div className="flex flex-col md:flex-row md:space-x-8 space-y-8 md:space-y-0 mb-8">
         {/* ARKCOIN Wallet Card */}
         <div className="bg-gray-800 p-6 rounded-2xl shadow-lg flex-1">
-          <h2 className="text-xl font-bold mb-4 text-green-500">ARKCOIN Wallet</h2>
-          <p className="text-4xl font-extrabold text-blue-400 mb-2">
-            1,250 <span className="text-sm font-semibold text-gray-400">ARKCOIN</span>
-          </p>
-          <p className="text-sm text-gray-400 mb-4">
-            $2.50 per ARKCOIN<br/>
-            1.2 ARKCOIN Carbon Credit
-          </p>
-          <button className="w-full cursor-pointer bg-green-400 text-white font-bold py-3 px-4 rounded-xl shadow-md hover:bg-green-600 transition-colors">
-            Buy ARKCOIN
-          </button>
-        </div>
 
-        {/* Offset Your Carbon Card */}
-        <div className="bg-gray-800 p-6 rounded-2xl shadow-lg flex-1">
-          <h2 className="text-xl font-bold mb-4 text-green-500">Offset Your Carbon</h2>
-          <p className="text-4xl font-extrabold text-green-400 mb-2">
-            126 <span className="text-sm font-semibold text-gray-400">TONS CO₂</span>
-          </p>
-          <div className="flex items-center mb-2">
-            <input
-              type="checkbox"
-              id="autoOffset"
-              checked={isAutoOffset}
-              onChange={handleAutoOffsetChange}
-              className="mr-2 h-4 w-4 text-green-600 rounded-md border-gray-300 focus:ring-green-500"
-            />
-            <label htmlFor="autoOffset" className="text-gray-400">
-              Auto-offset
-            </label>
+          <h2 className="text-2xl font-bold mb-4 text-white">Buy ARKCOIN</h2>
+          <div className='flex'>
+              <div>
+                <p className="text-sm text-gray-400">
+                  Balance
+                </p>          
+                <p className="text-4xl font-extrabold text-blue-400 mb-2">
+                  1,250 <span className="text-sm font-semibold text-gray-400">ARKCOIN</span>
+                </p>
+              </div>
+              <div className='hidden lg:block flex-1'></div>
+              <div className='flex-1'>
+                <p className="text-lg text-gray-400 mb-4">
+                  $2.50 per ARKCOIN<br />
+                  1.2 ARKCOIN Carbon Credit
+                </p>
+              </div>
           </div>
 
-          <p className="text-sm text-gray-400">
-            Offset monthly via a subscription
-          </p>
 
-          <button className="w-full cursor-pointer bg-green-400 text-white font-bold py-3 px-4 rounded-xl shadow-md hover:bg-green-600 transition-colors mb-4">
-            Redeem ARKCOIN
-          </button>
 
+
+
+          <div className="flex items-center space-x-2 mb-4">
+            <input
+              type="number"
+              value={buyAmount}
+              onChange={handleBuyAmountChange}
+              className="w-full bg-gray-700 text-white font-bold py-3 px-4 rounded-xl shadow-md focus:outline-none focus:ring-2 focus:ring-green-400"
+              placeholder="Enter amount"
+            />
+            <button className="flex-shrink-0 cursor-pointer bg-green-400 text-white font-bold py-3 px-4 rounded-xl shadow-md hover:bg-green-600 transition-colors">
+              Buy ARKCOIN
+            </button>
+          </div>
+        </div>
+      </div>
+
+      {/* Offset My Footprint section */}
+      <div className="mb-8">
+        <h2 className="text-2xl font-bold mb-4 text-white">Offset My Footprint</h2>
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+          <div className="bg-gray-800 p-6 rounded-2xl shadow-lg flex flex-col items-start justify-center text-white">
+            <div className="flex items-center mb-2">
+              <span className="p-2 bg-gray-700 rounded-full mr-3">
+                <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-green-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
+                </svg>
+              </span>
+              <span className="font-bold text-lg">Offset Lifetime</span>
+            </div>
+            <p className="text-sm text-gray-400">Your lifetime emissions:</p>
+            <p className="text-xl font-semibold">525 tons CO₂</p>
+          </div>
+          <div className="bg-gray-800 p-6 rounded-2xl shadow-lg flex flex-col items-start justify-center text-white">
+            <div className="flex items-center mb-2">
+              <span className="p-2 bg-gray-700 rounded-full mr-3">
+                <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-green-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                </svg>
+              </span>
+              <span className="font-bold text-lg">Offset 1 Year</span>
+            </div>
+            <p className="text-xl font-semibold">15 tons CO₂ = $225</p>
+          </div>
+          <div className="bg-gray-800 p-6 rounded-2xl shadow-lg flex flex-col items-start justify-center text-white">
+            <div className="flex items-center mb-2">
+              <span className="p-2 bg-gray-700 rounded-full mr-3">
+                <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-green-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 4v5h.582m15.836 1.5a9 9 0 11-12.247 9.54l.267.143a.5.5 0 00.518-.89L.5 13.5a1 1 0 011-1h13.382l-3.327-3.327a.5.5 0 01.707-.707l4.5 4.5a.5.5 0 010 .707l-4.5 4.5a.5.5 0 01-.707-.707L14.382 14H1.5" />
+                </svg>
+              </span>
+              <span className="font-bold text-lg">Monthly Subscription</span>
+            </div>
+            <p className="text-xl font-semibold">$15 / month</p>
+          </div>
+          <div className="bg-gray-800 p-6 rounded-2xl shadow-lg flex flex-col items-start justify-center text-white">
+            <div className="flex items-center mb-2">
+              <span className="p-2 bg-gray-700 rounded-full mr-3">
+                <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-green-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+              </span>
+              <span className="font-bold text-lg">Gift ARKCoin</span>
+            </div>
+            <p className="text-xl font-semibold">Send as gift</p>
+          </div>
         </div>
       </div>
 
       {/* History & Certificates section */}
+      
       <div className="bg-gray-800 p-6 rounded-2xl shadow-lg">
+        <h2 className="text-2xl font-bold mb-4 text-white">History & Certificates</h2>
         <div className="flex justify-between items-center mb-4">
-          <h2 className="text-xl font-bold text-green-500">History & Certificates</h2>
           <span className="text-lg font-bold text-gray-400 hidden md:block">126 TONS CO₂</span>
           <a href="#" className="text-blue-400 hover:underline text-sm md:hidden">View Certificate</a>
         </div>

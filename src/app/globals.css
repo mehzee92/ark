@@ -225,3 +225,21 @@ animated text
     background-position: 0% 50%;
   }
 }
+
+
+.hero-container {
+  background-repeat: no-repeat;
+  min-height: 600px;
+  background-size: 320px, cover;
+  background-position: calc(50% - 250px) 370px, center center;
+  background-image: url("/images/did-you-plant-this.png"), url("/images/background-img.png");
+}
+
+
+@media (max-width: 768px) {
+    .hero-container {
+      background-size: 150px, cover;
+      background-position: left center, center center;
+      background-image: url("/images/did-you-plant-this.png"), url("/images/background-img2.png");
+    }
+}

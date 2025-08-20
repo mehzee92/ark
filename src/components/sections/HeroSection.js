@@ -21,33 +21,26 @@ export default function ARKCARBONPresale() {
 
   return (
    
-    <div style={{
-      backgroundRepeat:"no-repeat", 
-      minHeight:"600px", 
-      backgroundSize:"cover", 
-      backgroundPositionX:"center",
-      backgroundImage: "url(/images/background-img.png)" 
-      
-      }}>
+    <div class="hero-container" >
+
+      <div className="">
        <Section 
       
       id="home"
     >
       <div
         id="hero"
-        className="items-center md:flex-row md:justify-between gap-5 md:gap-16"
+        className=" items-center md:flex-row md:justify-between gap-5 md:gap-16"
 
       >
         {/* Left Section */}
         <div className=" " >
         
           
-          <div className="block lg:flex" style={{maxWidth:"800px", margin:"auto"}}>
-            <div className="lg:w-46">
-                <img src="/images/did-you-plant-this.png" className="inline" style={{width:"360px"}} />
-            </div>
+          <div className="block lg:flex text-center" style={{maxWidth:"900px", margin:"auto"}}>
+
             <div className="flex-1 px-3 flex items-center">
-               <H1 text={<>Flights, grills, streams — your fun, your footprint. Oceans, forests, clean air — your life, your legacy. ARKCarbon is the vessel.</>} />
+               <H1 text={<>ARK Carbon: the first sustainability coin to offset your carbon footprint</>} />
             </div>
           </div>
 
@@ -59,37 +52,48 @@ export default function ARKCARBONPresale() {
         <div className="text-center my-3">
           <Button onClick={gotoDashboard} text={"For Individuals"} variant="success" />
           <Button  onClick={gotoDashboard} text={"For Business"} variant="success" />
-          <Button onClick={gotoSubmitForm}  text={"Green Project Incubator"} variant="success" />
         </div>
 
-        <div className="text-center my-3">
-          <GiDrop className="text-2xl text-green-400 inline" />
+        <div className="text-center">
+          <GiDrop className="text-2xl text-green-700 inline" />
         </div>
+        <div className="text-center">
+          <GiDrop className="text-2xl text-green-700 inline" />
+        </div>   
+        <div className="text-center">
+          <GiDrop className="text-2xl text-green-700 inline" />
+        </div>              
 
         <div className="text-center my-2 ">
-          <img src="/images/logo.png" className="inline" style={{width:"110px", height:"110px"}} />
+          <img src="/images/logo.png" className="inline" style={{width:"130px", height:"130px"}} />
         </div>
     
         <div className="text-center my-2">
-          <GiDrop className="text-2xl text-green-400 inline" />
+          <GiDrop className="text-2xl text-green-700 inline" />
         </div> 
 
         <div className="text-center my-3">
-          <img src="/images/carbon-cradits.svg" className="inline" style={{width:"120px"}} />
+          <img src="/images/carbon-credits.jpeg" className="inline" style={{width:"110px", borderRadius:"50%"}} />
         </div>   
 
-        <div className="text-center my-2">
-          <GiDrop className="text-2xl text-green-400 inline" />
+        <div className="text-center">
+          <GiDrop className="text-2xl text-green-300 inline" />
         </div> 
+        <div className="text-center">
+          <GiDrop className="text-2xl text-green-300 inline" />
+        </div>    
+        <div className="text-center">
+          <GiDrop className="text-2xl text-green-300 inline" />
+        </div>                     
 
-
-        <div className="text-center my-3">
-          <img src="/images/for-green-projects.svg" className="inline" style={{width:"250px"}} />
-        </div>              
-
+        <div className="text-center mt-2">
+            <Button onClick={gotoSubmitForm}  text={"Green Project Incubator"} variant="success" />
+        </div>
+        
 
       </div>
     </Section>
+    </div>
     </div>
   );
 }
