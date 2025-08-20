@@ -11,8 +11,9 @@ export default function Home() {
     <div>
       <HeroSection />
       <Dashboard />
-      <SubmitProject />
       <About />
+      <SubmitProject />
+      
       {/* <StorySection />
       <TokenomicsSection />
       <VestingSection />
