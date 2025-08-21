@@ -170,6 +170,7 @@ p, h1, h2, h3, div, input, select {
 @media (max-width: 768px) {
   .section-wrapper {
     flex-direction: column;
+    padding: 0.5rem 0.5rem;
     gap: 1.25rem;
   }
 }
@@ -238,8 +239,9 @@ animated text
 
 @media (max-width: 768px) {
     .hero-container {
+      min-height: 300px;
       background-size: 150px, cover;
-      background-position: left center, center center;
+      background-position: left 200px, center bottom;
       background-image: url("/images/did-you-plant-this.png"), url("/images/background-img2.png");
     }
 }

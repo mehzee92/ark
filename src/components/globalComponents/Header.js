@@ -8,7 +8,7 @@ const Header = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   return (
-    <header className="sticky top-0 z-50 bg-dark-blue/90 bg-black md:bg-transparent md:backdrop-blur shadow-sm shadow-gray-800 transition-all">
+    <header className="sticky top-0 z-50 bg-dark-blue/90 bg-black shadow-sm shadow-gray-800 transition-all">
       <div className=" mx-auto flex justify-between items-center py-3 px-4 md:px-8">
         {/* Logo */}
         <Link href={"/"} className="flex items-center">

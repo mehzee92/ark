@@ -21,16 +21,16 @@ export default function ARKCARBONPresale() {
 
   return (
    
-    <div class="hero-container" >
+    <div className="hero-container" >
 
-      <div className="">
+      <div className="  ">
        <Section 
       
       id="home"
     >
       <div
         id="hero"
-        className=" items-center md:flex-row md:justify-between gap-5 md:gap-16"
+        className="items-center md:flex-row md:justify-between "
 
       >
         {/* Left Section */}
@@ -49,7 +49,7 @@ export default function ARKCARBONPresale() {
 
 
 
-        <div className="text-center my-3">
+        <div className="text-center my-3 ">
           <Button onClick={gotoDashboard} text={"For Individuals"} variant="success" />
           <Button  onClick={gotoDashboard} text={"For Business"} variant="success" />
         </div>
@@ -57,15 +57,15 @@ export default function ARKCARBONPresale() {
         <div className="text-center">
           <GiDrop className="text-2xl text-green-700 inline" />
         </div>
-        <div className="text-center">
+        <div className="text-center hidden lg:block">
           <GiDrop className="text-2xl text-green-700 inline" />
         </div>   
-        <div className="text-center">
+        <div className="text-center hidden lg:block">
           <GiDrop className="text-2xl text-green-700 inline" />
         </div>              
 
         <div className="text-center my-2 ">
-          <img src="/images/logo.png" className="inline" style={{width:"130px", height:"130px"}} />
+          <img src="/images/logo.png" className="inline w-18  lg:w-36" />
         </div>
     
         <div className="text-center my-2">
@@ -73,16 +73,16 @@ export default function ARKCARBONPresale() {
         </div> 
 
         <div className="text-center my-3">
-          <img src="/images/carbon-credits.jpeg" className="inline" style={{width:"110px", borderRadius:"50%"}} />
+          <img src="/images/carbon-credits.jpeg" className="inline w-14  lg:w-36" style={{borderRadius:"50%"}} />
         </div>   
 
         <div className="text-center">
           <GiDrop className="text-2xl text-green-300 inline" />
         </div> 
-        <div className="text-center">
+        <div className="text-center hidden lg:block">
           <GiDrop className="text-2xl text-green-300 inline" />
         </div>    
-        <div className="text-center">
+        <div className="text-center hidden lg:block">
           <GiDrop className="text-2xl text-green-300 inline" />
         </div>                     
 

@@ -7,13 +7,13 @@ const Section = ({children, heading, bgimage, className = "", id = ""}) => {
     
     return (
       <section 
-        className={`section-wrapper py-16 relative ${className}`}
+        className={`section-wrapper   ${className}`}
         style={style}
         id={id}
       >
-        <div className="w-full space-y-10">
+        <div className="w-full space-y-2 lg:space-y-10">
           {heading && (
-            <div className="text-center">
+            <div className="text-center show">
               <SectionHeading text={heading} />
             </div>
           )}

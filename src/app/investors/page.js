@@ -1,4 +1,5 @@
 "use client";
+import Link from "next/link";
 
 const ArkCarbonInvestors = () => {
   const benefits = [
@@ -49,6 +50,27 @@ const ArkCarbonInvestors = () => {
         </p>
       </div>
 
+      {/* New - Market Strategy Section */}
+      <div className="bg-gray-800 p-6 rounded-2xl shadow-lg mb-10">
+        <h2 className="text-2xl font-bold text-white mb-4 text-center">Our Market Strategy</h2>
+        <div className="text-gray-300">
+          <p className="mb-4">
+            ARKCARBON targets two distinct markets:
+          </p>
+          <ul className="list-disc list-inside space-y-2">
+            <li>
+              <span className="font-semibold text-green-400">Voluntary Carbon Market (~$4B)</span> – A small, underdeveloped market that presents a blue-ocean opportunity. Our goal is to transform voluntary offsetting into a mainstream movement, much like recycling became a global trend.
+            </li>
+            <li>
+              <span className="font-semibold text-green-400">Compliance Carbon Market (~$1T)</span> – A massive but outdated market plagued by fraud, inefficiency, and a lack of innovation. We see a significant opportunity for disruption.
+            </li>
+          </ul>
+          <p className="mt-4">
+            Our strategy is to operate in both arenas: we will shape the voluntary market into a cultural trend while introducing much-needed transparency and innovation into the trillion-dollar compliance space.
+          </p>
+        </div>
+      </div>
+
       {/* Benefits Section */}
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
         {benefits.map((benefit, index) => (
@@ -88,9 +110,9 @@ const ArkCarbonInvestors = () => {
         <h3 className="text-xl font-bold text-white mb-4">
           Ready to become an ARKCARBON Investor?
         </h3>
-        <button className="bg-green-400 text-white font-bold py-3 px-6 rounded-xl shadow-md hover:bg-green-600 transition-colors">
-          Buy ARKCARBON Now
-        </button>
+        <Link href="/#dashboard" className="bg-green-400 cursor-pointer text-white font-bold py-3 px-6 rounded-xl shadow-md hover:bg-green-600 transition-colors">
+          Buy ARKCARBON
+        </Link>
       </div>
     </div>
   );

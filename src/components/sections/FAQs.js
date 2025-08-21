@@ -28,9 +28,9 @@ export default function App() {
   ];
 
   return (
-    <div id='faqs' className="flex flex-col items-center min-h-screen bg-gray-950 text-gray-100 lg:p-8 font-sans antialiased">
+    <div id='faqs' className="flex  flex-col items-center min-h-screen bg-[#141415ed] text-gray-100 lg:p-8 font-sans antialiased">
       {/* Container for the entire FAQ section */}
-      <div className="w-full max-w-4xl mx-auto py-12 p-2 lg:p-4">
+      <div className="w-full  max-w-6xl mx-auto py-12 p-2 lg:p-4">
         {/* Main heading */}
         <h1 className="text-3xl md:text-5xl font-extrabold text-center mb-10 text-gray-50 leading-tight tracking-wide">
           Frequently Asked Questions
