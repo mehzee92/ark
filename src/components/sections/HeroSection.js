@@ -23,7 +23,7 @@ export default function ARKCARBONPresale() {
    
     <div className="hero-container" >
 
-      <div className="  ">
+      <div className="">
        <Section 
       
       id="home"
@@ -58,10 +58,10 @@ export default function ARKCARBONPresale() {
           <GiDrop className="text-2xl text-green-700 inline" />
         </div>
         <div className="text-center hidden lg:block">
-          <GiDrop className="text-2xl text-green-700 inline" />
+          <GiDrop className="text-2xl text-green-600 inline" />
         </div>   
         <div className="text-center hidden lg:block">
-          <GiDrop className="text-2xl text-green-700 inline" />
+          <GiDrop className="text-2xl text-green-300 inline" />
         </div>              
 
         <div className="text-center my-2 ">
@@ -72,18 +72,18 @@ export default function ARKCARBONPresale() {
           <GiDrop className="text-2xl text-green-700 inline" />
         </div> 
 
-        <div className="text-center my-3">
-          <img src="/images/carbon-credits.jpeg" className="inline w-14  lg:w-36" style={{borderRadius:"50%"}} />
+        <div className="text-center my-3 ">
+          <img src="/images/carbon-credits.jpeg" className="inline w-10  lg:w-28" style={{borderRadius:"50%"}} />
         </div>   
 
         <div className="text-center">
-          <GiDrop className="text-2xl text-green-300 inline" />
+          <GiDrop className="text-2xl text-green-500 inline" />
         </div> 
         <div className="text-center hidden lg:block">
-          <GiDrop className="text-2xl text-green-300 inline" />
+          <GiDrop className="text-2xl text-green-200 inline" />
         </div>    
         <div className="text-center hidden lg:block">
-          <GiDrop className="text-2xl text-green-300 inline" />
+          <GiDrop className="text-2xl text-green-100 inline" />
         </div>                     
 
         <div className="text-center mt-2">

@@ -21,12 +21,12 @@ const Header = () => {
 
         {/* Desktop Navigation */}
         <nav className="hidden flex-1 md:flex justify-center gap-1 text-gray-200 items-center text-lg font-light p-2">         
-          <Link href="/#dashboard" className="hover:text-[#abc4ff] hover:bg-[#1c243e] px-3 py-2 rounded-xl transition">Buy ARK Coin</Link>
-          <Link href="/#about" className="hover:text-[#abc4ff] hover:bg-[#1c243e] px-3 py-2 rounded-xl transition">Carbon Credits</Link>
-          <Link href="/#submit_project" className="hover:text-[#abc4ff] hover:bg-[#1c243e] px-3 py-2 rounded-xl transition">Green Project Incubator</Link>
-          <Link href="/#faqs" className="hover:text-[#abc4ff] hover:bg-[#1c243e] px-3 py-2 rounded-xl transition">FAQs</Link>
-          <Link href="/documents/whitepaper.pdf" className="hover:text-[#abc4ff] hover:bg-[#1c243e] px-3 py-2 rounded-xl transition">Whitepaper</Link>
-          <Link href="/investors" className="hover:text-[#abc4ff] hover:bg-[#1c243e] px-3 py-2 rounded-xl transition">For Investors</Link>
+          <Link href="/#dashboard" className="hover:text-[#abc4ff] font-bold hover:bg-[#1c243e] px-3 py-2 rounded-xl transition">Buy ARK Coin</Link>
+          <Link href="/#about" className="hover:text-[#abc4ff] font-bold hover:bg-[#1c243e] px-3 py-2 rounded-xl transition">Carbon Credits</Link>
+          <Link href="/#submit_project" className="hover:text-[#abc4ff] font-bold hover:bg-[#1c243e] px-3 py-2 rounded-xl transition">Green Project Incubator</Link>
+          <Link href="/#faqs" className="hover:text-[#abc4ff] hover:bg-[#1c243e] font-bold px-3 py-2 rounded-xl transition">FAQs</Link>
+          <Link href="/documents/whitepaper.pdf" className="hover:text-[#abc4ff] font-bold hover:bg-[#1c243e] px-3 py-2 rounded-xl transition">Whitepaper</Link>
+          <Link href="/investors" className="hover:text-[#abc4ff] hover:bg-[#1c243e] font-bold px-3 py-2 rounded-xl transition">For Investors</Link>
         </nav>
 
         
