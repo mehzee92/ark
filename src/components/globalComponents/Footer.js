@@ -54,7 +54,7 @@ const Footer = () => {
               </div>
             </div>
             <p className="text-gray-400 text-sm leading-relaxed" style={{maxWidth:"550px"}}>
-              Our carbon credit–backed token empowers sustainable investing by turning 
+              Our carbon credit–backed token empowers sustainable partnerships by turning 
               verified carbon offsets into a secure and tradeable digital asset.
             </p>
           </div>

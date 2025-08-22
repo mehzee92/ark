@@ -8,7 +8,7 @@ function H1({text,variant="type_one"}) {
     textGradient: `text-xl bg-clip-text text-transparent bg-gradient-to-r from-green-400 to-pink-500 font-extrabold`
   }
   return (
-    <h1 className={`${variants[variant]}`}>
+    <h1 style={{fontFamily:"Caveat"}} className={`${variants[variant]}`}>
       {text}
     </h1>
   )

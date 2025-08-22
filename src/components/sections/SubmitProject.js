@@ -8,19 +8,19 @@ const ArkCarbonProjects = () => {
       title: "Rainforest Reforestation",
       description:
         "A project focused on planting native trees to restore a rainforest ecosystem and combat deforestation.",
-      image: "https://cdn.prod.website-files.com/63f5b129b7d6a303691fd59f/6875f5c3d9ecd88c853b10fe_ARR.png",
+      image: "/images/reforestation.png",
     },
     {
       title: "Solar Farm Development",
       description:
         "Investing in the creation of large-scale solar farms to provide clean energy to local communities.",
-      image: "https://cdn.prod.website-files.com/63f5b129b7d6a303691fd59f/67a424797894eac021462932_DJI_0045-min.jpg",
+      image: "/images/solar-farm.png",
     },
     {
       title: "Ocean Cleanup Initiative",
       description:
         "Funding a global effort to remove plastic waste and debris from the world's oceans.",
-      image: "https://cdn.prod.website-files.com/63f5b129b7d6a303691fd59f/689b0a39ffa45f2c9ba48154_Peatland.min.png",
+      image: "/images/ocean-clean.png",
     },
   ];
 

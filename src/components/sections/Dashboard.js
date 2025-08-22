@@ -40,11 +40,10 @@ const ArkCarbonDashboard = () => {
       </h1>
 
       {/* ARKCOIN Wallet Section */}
-      <h2 className="text-2xl font-bold mb-4 text-white">ARKCOIN Wallet</h2>
       <div className="flex flex-col md:flex-row md:space-x-8 space-y-8 md:space-y-0 mb-8">
         {/* ARKCOIN Wallet Card */}
         <div className="bg-gray-800 p-6 rounded-2xl shadow-lg flex-1">
-          <h2 className="text-xl font-bold mb-4 text-green-500">Buy ARKCOIN</h2>
+          <h2 className="text-xl px-3 font-bold mb-4 text-green-500">Buy ARKCOIN</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-4">
             <div className="bg-gray-700 p-4 rounded-xl text-center">
               <p className="text-2xl font-extrabold text-blue-400">1,250</p>
@@ -76,7 +75,7 @@ const ArkCarbonDashboard = () => {
 
       {/* Offset My Footprint section */}
       <div className="mb-8">
-        <h2 className="text-2xl font-bold mb-4 text-white">Offset My Footprint</h2>
+        <h2 className="text-2xl px-5 font-bold mb-4 text-green-500">Offset My Footprint</h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
           <div className="bg-gray-800 p-6 rounded-2xl shadow-lg flex flex-col items-start justify-center text-white">
             <div className="flex items-center mb-2">

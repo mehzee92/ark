@@ -8,7 +8,8 @@ const Header = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   return (
-    <header className="sticky top-0 z-50 bg-dark-blue/90 bg-black shadow-sm shadow-gray-800 transition-all">
+    <header 
+    className="sticky top-0 z-50 bg-dark-blue/90 bg-black shadow-sm shadow-gray-800 transition-all">
       <div className=" mx-auto flex justify-between items-center py-3 px-4 md:px-8">
         {/* Logo */}
         <Link href={"/"} className="flex items-center">
@@ -25,8 +26,8 @@ const Header = () => {
           <Link href="/#about" className="hover:text-[#abc4ff] font-bold hover:bg-[#1c243e] px-3 py-2 rounded-xl transition">Carbon Credits</Link>
           <Link href="/#submit_project" className="hover:text-[#abc4ff] font-bold hover:bg-[#1c243e] px-3 py-2 rounded-xl transition">Green Project Incubator</Link>
           <Link href="/#faqs" className="hover:text-[#abc4ff] hover:bg-[#1c243e] font-bold px-3 py-2 rounded-xl transition">FAQs</Link>
-          <Link href="/documents/whitepaper.pdf" className="hover:text-[#abc4ff] font-bold hover:bg-[#1c243e] px-3 py-2 rounded-xl transition">Whitepaper</Link>
-          <Link href="/investors" className="hover:text-[#abc4ff] hover:bg-[#1c243e] font-bold px-3 py-2 rounded-xl transition">For Investors</Link>
+          <Link href="/whitepaper" className="hover:text-[#abc4ff] font-bold hover:bg-[#1c243e] px-3 py-2 rounded-xl transition">Whitepaper</Link>
+          <Link href="/partners" className="hover:text-[#abc4ff] hover:bg-[#1c243e] font-bold px-3 py-2 rounded-xl transition">For Partners</Link>
         </nav>
 
         
@@ -84,8 +85,8 @@ const Header = () => {
           <Link href="/#about" className="text-lg font-semibold hover:text-blue-400 transition" onClick={() => setIsMobileMenuOpen(false)}>Carbon Credits</Link>
           <Link href="/#submit_project" className="text-lg font-semibold hover:text-blue-400 transition" onClick={() => setIsMobileMenuOpen(false)}>Green Project Incubator</Link>
           <Link href="/#faqs" className="text-lg font-semibold hover:text-blue-400 transition" onClick={() => setIsMobileMenuOpen(false)}>FAQs</Link>
-          <Link href="/documents/whitepaper.pdf" className="text-lg font-semibold hover:text-blue-400 transition" onClick={() => setIsMobileMenuOpen(false)}>Whitepaper</Link>
-          <Link href="/investors" className="text-lg font-semibold hover:text-blue-400 transition" onClick={() => setIsMobileMenuOpen(false)}>For Investors</Link>
+          <Link href="/whitepaper" className="text-lg font-semibold hover:text-blue-400 transition" onClick={() => setIsMobileMenuOpen(false)}>Whitepaper</Link>
+          <Link href="/partners" className="text-lg font-semibold hover:text-blue-400 transition" onClick={() => setIsMobileMenuOpen(false)}>For Partners</Link>
 
 
 
