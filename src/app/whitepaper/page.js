@@ -1,5 +1,6 @@
 "use client"
 import React, { useState, useEffect } from 'react';
+import Link from "next/link";
 
 // Main App component which serves as the Next.js page
 export default function App() {
@@ -54,7 +55,10 @@ export default function App() {
       <main className="container mx-auto px-6 max-w-4xl">
         {/* Section: 1. Introduction */}
         <section id="introduction" className="py-12 sm:py-20">
-          <h2 className="text-3xl font-bold mb-4">1. Introduction</h2>
+          <h2 className="text-3xl text-green-400 font-bold mb-4">1. Introduction</h2>
+
+
+
           <div className="section-divider mb-8"></div>
           <p className="text-lg leading-relaxed text-gray-300">
             The Earth is at a tipping point. Every flight, every mile driven, every barbecue adds to the invisible burden of carbon in the atmosphere. ARKCarbon exists to balance this equation — giving individuals and corporations a simple, transparent way to offset their carbon footprint through verified carbon credits.
@@ -66,7 +70,7 @@ export default function App() {
 
         {/* Section: 2. The Problem */}
         <section id="problem" className="py-12 sm:py-20">
-          <h2 className="text-3xl font-bold mb-4">2. The Problem</h2>
+          <h2 className="text-3xl text-green-400 font-bold mb-4">2. The Problem</h2>
           <div className="section-divider mb-8"></div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             <div className="bg-gray-800 p-6 rounded-3xl shadow-lg">
@@ -94,7 +98,7 @@ export default function App() {
 
         {/* Section: 3. The Solution: ARKCarbon */}
         <section id="solution" className="py-12 sm:py-20">
-          <h2 className="text-3xl font-bold mb-4">3. The Solution: ARKCarbon</h2>
+          <h2 className="text-3xl text-green-400 font-bold mb-4">3. The Solution: ARKCarbon</h2>
           <div className="section-divider mb-8"></div>
           <p className="text-lg leading-relaxed text-gray-300 mb-8">
             ARKCarbon builds a transparent and efficient bridge between people, enterprises, and certified carbon projects.
@@ -126,7 +130,7 @@ export default function App() {
 
         {/* Section: 4. Carbon Credits Explained */}
         <section id="carbon-credits" className="py-12 sm:py-20">
-          <h2 className="text-3xl font-bold mb-4">4. Carbon Credits Explained</h2>
+          <h2 className="text-3xl font-bold text-green-400 mb-4">4. Carbon Credits Explained</h2>
           <div className="section-divider mb-8"></div>
           <p className="text-lg leading-relaxed text-gray-300 mb-8">
             ARKCarbon never issues its own credits. We work only with third-party verified credits, ensuring integrity and trust.
@@ -153,7 +157,7 @@ export default function App() {
 
         {/* Section: 5. ARKCoin Utility */}
         <section id="arkcoin-utility" className="py-12 sm:py-20">
-          <h2 className="text-3xl font-bold mb-4">5. ARKCoin Utility</h2>
+          <h2 className="text-3xl text-green-400 font-bold mb-4">5. ARKCoin Utility</h2>
           <div className="section-divider mb-8"></div>
           <p className="text-lg leading-relaxed text-gray-300 mb-8">
             ARKCoin is a utility token that powers the ARKCarbon ecosystem.
@@ -184,7 +188,7 @@ export default function App() {
 
         {/* Section: 6. Tokenomics */}
         <section id="tokenomics" className="py-12 sm:py-20">
-          <h2 className="text-3xl font-bold mb-4">6. Tokenomics</h2>
+          <h2 className="text-3xl  text-green-400 font-bold mb-4">6. Tokenomics</h2>
           <div className="section-divider mb-8"></div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <div>
@@ -212,7 +216,7 @@ export default function App() {
 
         {/* Section: 7. User Journey */}
         <section id="user-journey" className="py-12 sm:py-20">
-          <h2 className="text-3xl font-bold mb-4">7. User Journey</h2>
+          <h2 className="text-3xl text-green-400 font-bold mb-4">7. User Journey</h2>
           <div className="section-divider mb-8"></div>
           <div className="space-y-6">
             <div className="flex items-start">
@@ -255,7 +259,7 @@ export default function App() {
 
         {/* Section: 8. Market Opportunity */}
         <section id="market-opportunity" className="py-12 sm:py-20">
-          <h2 className="text-3xl font-bold mb-4">8. Market Opportunity</h2>
+          <h2 className="text-3xl text-green-400 font-bold mb-4">8. Market Opportunity</h2>
           <div className="section-divider mb-8"></div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <div>
@@ -281,7 +285,7 @@ export default function App() {
 
         {/* Section: 9. Governance & Compliance */}
         <section id="governance" className="py-12 sm:py-20">
-          <h2 className="text-3xl font-bold mb-4">9. Governance & Compliance</h2>
+          <h2 className="text-3xl text-green-400 font-bold mb-4">9. Governance & Compliance</h2>
           <div className="section-divider mb-8"></div>
           <ul className="text-lg leading-relaxed text-gray-300 space-y-4">
             <li className="flex items-start">
@@ -301,7 +305,7 @@ export default function App() {
 
         {/* Section: 10. Roadmap */}
         <section id="roadmap" className="py-12 sm:py-20">
-          <h2 className="text-3xl font-bold mb-4">10. Roadmap</h2>
+          <h2 className="text-3xl text-green-400 font-bold mb-4">10. Roadmap</h2>
           <div className="section-divider mb-8"></div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {/* Phase 1 */}
@@ -337,7 +341,7 @@ export default function App() {
 
         {/* Section: 11. Why ARKCarbon */}
         <section id="why" className="py-12 sm:py-20">
-          <h2 className="text-3xl font-bold mb-4">11. Why ARKCarbon</h2>
+          <h2 className="text-3xl text-green-400 font-bold mb-4">11. Why ARKCarbon</h2>
           <div className="section-divider mb-8"></div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <div>
@@ -377,15 +381,15 @@ export default function App() {
 
         {/* Section: 12. Call to Action */}
         <section id="cta" className="py-12 sm:py-20 text-center">
-          <h2 className="text-4xl font-bold mb-4 leading-tight">
-            This is not just a project. <br />It’s a vessel.
+          <h2 className="text-4xl text-green-400 font-bold mb-4 leading-tight">
+            This is not just a project. <br />It&39;s a vessel.
           </h2>
           <p className="text-xl md:text-2xl text-gray-300 max-w-2xl mx-auto mb-8">
             Join ARKCarbon — offset your footprint, fund the future, and carry life forward.
           </p>
-          <a href="#" className="inline-block px-8 py-4 text-xl font-semibold text-white bg-green-500 rounded-full transition-transform transform hover:scale-105 hover:bg-green-600 shadow-xl">
+          <Link href="/#dashboard" className="inline-block px-8 py-4 text-xl font-semibold text-white bg-green-500 rounded-full transition-transform transform hover:scale-105 hover:bg-green-600 shadow-xl">
             Start Your Journey
-          </a>
+          </Link>
         </section>
       </main>
 
@@ -398,28 +402,6 @@ export default function App() {
         </button>
       )}
 
-      {/* Styled-JSX for local CSS */}
-      <style jsx global>{`
-        body {
-          font-family: 'Inter', sans-serif;
-          background-color: #030712; /* gray-950 */
-          color: #f3f4f6; /* gray-100 */
-        }
-        .text-gradient {
-          background-clip: text;
-          -webkit-background-clip: text;
-          color: transparent;
-          background-image: linear-gradient(to right, #34d399, #10b981);
-        }
-        .section-divider {
-          height: 2px;
-          width: 80px;
-          background: linear-gradient(to right, #34d399, transparent);
-        }
-        html {
-          scroll-behavior: smooth;
-        }
-      `}</style>
     </>
   );
 }

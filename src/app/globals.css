@@ -218,7 +218,7 @@
 body {
   background: var(--background);
   color: var(--foreground);
-  color: #628e4d;
+  color: #FFFFFF;
   scroll-behavior: smooth;
   font-family: "Work Sans", sans-serif;
   font-optical-sizing: auto;
@@ -361,4 +361,19 @@ animated text
       background-position: left 200px, center bottom;
       background-image: url("/images/did-you-plant-thiss000.png"), url("/images/background-img2.png");
     }
+}
+
+
+.text-gradient {
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  background-image: linear-gradient(to right, #34d399, #10b981);
+}
+
+
+.section-divider {
+  height: 2px;
+  width: 80px;
+  background: linear-gradient(to right, #34d399, transparent);
 }

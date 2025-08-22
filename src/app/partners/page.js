@@ -77,7 +77,7 @@ const ArkCarbonPartners = () => {
         </div>
         <div className="relative z-10 container mx-auto px-6 max-w-4xl text-center">
           <h1 className="text-5xl md:text-6xl font-extrabold leading-tight tracking-tight text-white mb-4">
-            Patner with <span className="text-green-300">ARKCarbon</span> 
+            Patner with <span className="text-gradient">ARKCarbon</span> 
           </h1>
           <p className="text-2xl md:text-3xl font-semibold text-gray-300">
             Green Projects Partnership
@@ -170,7 +170,7 @@ const ArkCarbonPartners = () => {
       </div>
 
       {/* Call to Action */}
-      <div className="text-center">
+      <div className="text-center pb-8">
         <h3 className="text-xl font-bold text-white mb-4">
           Ready to become an ARKCARBON Partner?
         </h3>
