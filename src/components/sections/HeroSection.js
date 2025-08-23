@@ -5,7 +5,7 @@ export default function ARKCARBONPresale() {
 
   return (
    
-    <div className="hero-container flex " style={{alignItems:"center"}}>
+    <div className="hero-container lg:flex " style={{alignItems:"center"}}>
 
       <div className=" flex-1">
        <Section 
@@ -18,14 +18,14 @@ export default function ARKCARBONPresale() {
 
       >
 
-        <div className="flex-1">
+        <div className="flex-1 hidden lg:block">
           
         </div>
 
 
         <div className=" flex-1 max-w-3xl lg:px-4 font-bold   " >
-          <div className="text-5xl">EVERY LIFE MATTERS</div>
-          <div className="text-4xl image-text-1">ARKCARBON CARRIES THEM ALL</div>
+          <div className="text-5xl text-left lg:text-center ">EVERY LIFE MATTERS</div>
+          <div className="text-4xl text-left lg:text-center image-text-1">ARKCARBON CARRIES THEM ALL</div>
         </div>
         <style>
           {
@@ -49,8 +49,6 @@ export default function ARKCARBONPresale() {
                 background-clip: text; /* For some modern browsers */
                 color: transparent;
               }               
-
-
 
             `
           }
