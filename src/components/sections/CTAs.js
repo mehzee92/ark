@@ -18,7 +18,7 @@ const CTAs=()=>{
 
 
 return (
-    <div style={{borderBottom:"solid 1px white"}}>
+    <div style={{borderBottom:"solid 1px #FFFFFF30"}}>
         <div className="max-w-5xl  flex py-5 m-auto" >
                 <div className="">
                     <Button  variant="info" text="For Individuals" />
