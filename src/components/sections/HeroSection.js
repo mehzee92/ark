@@ -30,30 +30,21 @@ export default function ARKCARBONPresale() {
     >
       <div
         id="hero"
-        className="items-center md:flex-row md:justify-between "
+        className="items-center flex "
 
       >
-        {/* Left Section */}
-        <div className=" " >
-        
+
+        <div className="flex-1">
           
-          <div className="block lg:flex text-center" style={{maxWidth:"900px", margin:"auto"}}>
-
-            <div className="flex-1 px-3 flex items-center">
-               <H1 text={<>ARK Carbon: the first sustainability coin to offset your carbon footprint</>} />
-            </div>
-          </div>
-
         </div>
-
-
-
+        {/* Left Section */}
+        <div className=" max-w-2xl " >
 
         <div className="text-center my-3 ">
           <Button onClick={gotoDashboard} text={"For Individuals"} variant="success" />
           <Button  onClick={gotoDashboard} text={"For Business"} variant="success" />
         </div>
-
+            
         <div className="text-center">
           <GiDrop className="text-2xl text-green-700 inline" />
         </div>
@@ -89,6 +80,8 @@ export default function ARKCARBONPresale() {
         <div className="text-center mt-2">
             <Button onClick={gotoSubmitForm}  text={"Green Project Incubator"} variant="success" />
         </div>
+
+      </div>
         
 
       </div>
