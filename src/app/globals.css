@@ -192,7 +192,7 @@
 
 
 :root {
-  --background: #161415;
+  --background: #000003;
   --foreground: #070a16;
   --text-yellow: #0bc70e;
   --theme-purple: #098309;
@@ -348,9 +348,9 @@ animated text
 .hero-container {
   background-repeat: no-repeat;
   min-height: 600px;
-  background-size: 320px, contain;
+  background-size: 320px, cover;
   background-position: calc(50% - 250px) 370px, center left;
-  background-image: url("/images/did-you-plant-thiss.png"), url("/images/ark_hero_section.png");
+  background-image: url("/images/did-you-plant-thiss.png"), url("/images/ark_hero_desktop.png");
 }
 
 

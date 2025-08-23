@@ -1,9 +1,9 @@
 const Button = ({ text, onClick, variant = 'info', type = 'button' }) => {
 
   var variants = {
-    info: `mx-1 my-1 rounded-lg text-gray-800 bg-gradient-to-r cursor-pointer text-gray-200 font-semibold from-cyan-300 to-cyan-400 px-6 py-1 lg:py-2 focus:outline-none transition hover:shadow-lg hover:shadow-cyan-400/25`,
-    success: ` mx-1 border border-1 font-bold border-green-100 rounded-4xl cursor-pointer bg-gradient-to-r from-green-600 to-green-900 px-3 lg:px-6 py-1 lg:py-2 focus:outline-none transition hover:shadow-lg hover:shadow-green-700/25 text-lg lg:text-2xl`,
-    outlined: ` mx-1 my-1 rounded-lg border-2 cursor-pointer border-cyan-300 text-cyan-300 bg-transparent px-6 py-2 focus:outline-none transition hover:bg-cyan-300 hover:text-gray-800`
+    info: `    mx-1  border border-1  border-gray-100  rounded-4xl font-bold  cursor-pointer text-gray-50 bg-gradient-to-r  font-semibold from-gray-400 to-gray-600 px-6 py-1 lg:py-2 focus:outline-none text-gray-50 transition hover:shadow-lg hover:shadow-cyan-400/25 text-xl`,
+    success: ` mx-1  border border-1  border-gray-100  rounded-4xl font-bold  cursor-pointer bg-gradient-to-r from-green-600 to-green-900 px-3 lg:px-6 py-1 lg:py-2 focus:outline-none transition hover:shadow-lg hover:shadow-green-700/25 text-xl`,
+    outlined: `mx-1  border border-1  border-gray-100  rounded-4xl font-bold  cursor-pointer border-cyan-300 text-gray-50 bg-transparent  px-6 py-1 lg:py-2 focus:outline-none transition hover:text-gree-400 text-xl`
   }
 
   return ( 
